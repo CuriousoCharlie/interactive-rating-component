@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/normlize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+<div class="rating-container" id="rateUs">
+  <div class="inner-container">
+    <div class="star-container">
+      <img class="star-img" src="./images/icon-star.svg" alt="star image">
+
+    </div>
+  <h2>How did we do?</h2>
+
+  
+  <p class="msg">Please let us know how we did with our support request. All feedback is appreciated to help us improve our offering!</p>
+
+  <div class="rating-options">
+    <div class="rating-circle" id="1"><p>1</p></div>
+    <div class="rating-circle" id="2"><p>2</p></div>
+    <div class="rating-circle" id="3"><p>3</p></div>
+    <div class="rating-circle" id="4"><p>4</p></div>
+    <div class="rating-circle" id="5"><p>5</p></div>
+  </div>
+
+  <button class="submit-btn"><span class="btn-text">Submit</span></button>
+  </div>
+</div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class="rating-container hidden" id="thanks">
+  <img class="phone-img" src="./images/illustration-thank-you.svg" alt="phone image">
+  <p class="user-rating-text">You selected <span class="user-rating"></span> out of 5</p>
+
+  <h2 class="thanks-header">Thank you!</h2>
+
+  <p class="thanks-msg">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+</div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">GeorgeMan</a>.</p>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
